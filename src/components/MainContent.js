@@ -2,9 +2,9 @@ import React from "react";
 
 const Main = () => {
   return (
-    <div>
-      <h1>Fun facts about React</h1>
-      <ul className="main-content">
+    <main className="main-content">
+      <ul>
+        <h1>Fun facts about React</h1>
         <li>Was first released in 2013.</li>
         <li>Was originally created by Jordan Walke.</li>
         <li>
@@ -13,7 +13,7 @@ const Main = () => {
         <li>Is maintained by Facebook.</li>
         <li>Powers thousand of enterprise apps, including mobile apps.</li>
       </ul>
-    </div>
+    </main>
   );
 };
 

@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -11,10 +11,11 @@ body {
 
 h1 {
   text-align: center;
-  font-weight: bolder;
+  font-weight: 700;
   margin: 20px;
   color: white;
   letter-spacing: -0.05em;
+  font-size: 40px;
 }
 
 .nav-items {
@@ -28,6 +29,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 90px;
 }
 
 nav .left {
@@ -35,25 +37,35 @@ nav .left {
   justify-content: center;
   align-items: center;
   color: #61dbfb;
+  font-weight: 700;
 }
 
 h4 {
   color: white;
-  margin: 20px;
+  margin: 0 20px;
 }
 
 .nav-logo {
   margin: 10px;
-  width: 80px;
+  width: 40px;
+}
+
+.main-content {
+  height: 80vh;
+  background-image: url("https://res.cloudinary.com/dtkdsolsz/image/upload/v1643037766/react-icon-large_q0binl.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
 }
 
 .main-content li {
   color: #ffffff;
   margin: 20px;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
-.main-content > li::marker {
+.main-content > ul > li::marker {
   font-size: 1.4rem;
   color: #61dbfb;
 }
