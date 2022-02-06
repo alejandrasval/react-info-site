@@ -1,19 +1,22 @@
 import React from "react";
 
-const Header = () => {
+export default function Navbar(props) {
   return (
-    <nav>
-      <div className="left">
-        <img
-          className="nav-logo"
-          src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1642980740/logo-react_r38nnw.png"
-          alt=""
-        />
-        <h3>ReactFacts</h3>
+    <nav className={props.darkMode ? "dark" : ""}>
+      <img
+        className="nav-logo-icon"
+        src="https://res.cloudinary.com/dtkdsolsz/image/upload/v1642980740/logo-react_r38nnw.png"
+        alt=""
+      />
+      <h3 className="nav-logo-text">ReactFacts</h3>
+
+      <div className="toggler">
+        <p className="toggler-light">Light</p>
+        <div className="toggler-slider" onClick={props.toggleDarkMode}>
+          <div className="toggler-slider-circle"></div>
+        </div>
+        <p className="toggler-dark">Dark</p>
       </div>
-      <h4>React Course - Project 1</h4>
     </nav>
   );
-};
-
-export default Header;
+}
